@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kapture Stories — Collection</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="index.html">Kapture | Stories.</a>
+  <button class="share" id="share" type="button">Share collection ↗</button>
+  <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mainNav"><span></span><span></span><span></span></button>
+  <nav id="mainNav" class="main-nav" aria-label="Main navigation"><a href="index.html#collections">Gallery</a><a href="index.html#about">Contact</a></nav>
+</header>
+<main>
+  <section class="collection-hero"><a href="index.html">← All collections</a><small>✳ KAPTURE STORIES COLLECTION</small><h1 id="title">Loading collection…</h1><p id="description">Photos and videos in one place.</p><p class="muted" id="total">Connecting to Google Drive…</p></section>
+  <section class="section"><div class="heading"><div><small>THE COLLECTION</small><h2>Photos &amp; videos <sup id="count">—</sup></h2></div>
+    <div class="tools"><input id="search" type="search" placeholder="Find media…" aria-label="Find media"><button id="refresh" type="button" aria-label="Refresh media">↻</button></div></div>
+    <div id="notice" class="notice" role="status" hidden></div><div id="media" class="cards media-grid"></div>
+    <div id="empty" class="empty" hidden><h3>No media found</h3><p>Add photos or videos to this Drive folder, then refresh.</p></div>
+  </section>
+</main>
+<footer><a class="brand" href="index.html">Kapture | Stories.</a><span>Made for moments that matter.</span><a href="#">Back to top ↑</a></footer>
+<div class="viewer" id="viewer" aria-hidden="true"><button id="close" class="close" type="button" aria-label="Close viewer">×</button><button id="prev" class="arrow" type="button" aria-label="Previous media">‹</button><figure><div id="stage"></div><figcaption id="caption"></figcaption><a id="drive" target="_blank" rel="noopener">Open original in Google Drive ↗</a></figure><button id="next" class="arrow" type="button" aria-label="Next media">›</button></div>
+<script src="config.js"></script><script src="collection.js"></script><script src="navigation.js"></script>
+</body></html>

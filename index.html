@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Wedding photography collections by Kapture Stories.">
+<title>Kapture Stories — Wedding Photography</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="index.html">Kapture | Stories.</a>
+  <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mainNav"><span></span><span></span><span></span></button>
+  <nav id="mainNav" class="main-nav" aria-label="Main navigation"><a href="#collections">Gallery</a><a href="#about">Contact</a></nav>
+</header>
+<main>
+  <section class="hero">
+    <p class="eyebrow">A COLLECTION OF MOMENTS</p>
+    <h1>Every story has<br><em>a place.</em></h1>
+    <p class="hero-copy">Explore the gallery, revisit memories, and share the moments that matter.</p>
+    <a class="button" href="#collections">Explore collections ↓</a>
+    <p class="muted" id="status">Discovering collections from Google Drive…</p>
+  </section>
+  <section class="section" id="collections">
+    <div class="heading"><div><small>BROWSE BY COLLECTION</small><h2>Your collections <sup id="count">—</sup></h2></div>
+      <div class="tools"><input id="search" type="search" placeholder="Find a collection…" aria-label="Find a collection"><button id="refresh" type="button" aria-label="Refresh collections">↻</button></div>
+    </div>
+    <div id="notice" class="notice" role="status" hidden></div><div id="cards" class="cards" aria-live="polite"></div>
+    <div id="empty" class="empty" hidden><h3>No collections found</h3><p>Create a folder inside your main Google Drive folder and add photos or videos to it.</p></div>
+  </section>
+  <section class="about" id="about"><small>ONE LINK. MANY MEMORIES.</small><h2>Photos, videos,<br><em>all in one place.</em></h2><p>New folders inside your main Google Drive folder appear as collections after refreshing this page.</p></section>
+</main>
+<footer><a class="brand" href="index.html">Kapture | Stories.</a><span>Made for moments that matter.</span><a href="#">Back to top ↑</a></footer>
+<script src="config.js"></script><script src="index.js"></script><script src="navigation.js"></script>
+</body></html>
